@@ -1,0 +1,191 @@
+/* important google font  */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Rubik+Pixels&display=swap");
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: #121321;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  perspective:1000px;
+}
+section::before {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  transform: translate(-150px, -100px);
+  background: linear-gradient(90deg, #9c27b0, #fff);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(-150px, -100px);
+  -moz-transform: translate(-150px, -100px);
+  -ms-transform: translate(-150px, -100px);
+  -o-transform: translate(-150px, -100px);
+}
+section::after {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  transform: translate(150px, 100px);
+  background: linear-gradient(90deg, #9c27b0, #fff);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(150px, 100px);
+  -moz-transform: translate(150px, 100px);
+  -ms-transform: translate(150px, 100px);
+  -o-transform: translate(150px, 100px);
+}
+.cont {
+  height: 275px;
+  width: 375px;
+  z-index: 100;
+  transition:.6s;
+  -webkit-transition:.6s;
+  -moz-transition:.6s;
+  -ms-transition:.6s;
+  -o-transition:.6s;
+  transform-style:preserve-3d ;
+}
+.cont:hover{
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+}
+.cont .card {
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.412);
+  background: rgba(52, 49, 49, 0.201);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.front-face header,
+.front-face .logo {
+  display: flex;
+  align-items: center;
+}
+.front-face header {
+  justify-content: space-between;
+}
+.front-face .logo img {
+  width: 48px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  margin-right: 10px;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.front-face .chip {
+  width: 50px;
+}
+.front-face .card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+h5.number {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+h5.name {
+  margin-top: 20px;
+  word-spacing: 8px;
+}
+.card-details .valid-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card.back {
+  border: none;
+  padding: 15px 25px 25px 25px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+.card .for {
+  font-size: 8px;
+}
+.back .maginetic-strap {
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  background: black;
+  left: 0;
+  top: 45px;
+}
+.back .NU {
+  margin-top: 80px;
+  height: 40px;
+  width: 85%;
+  background: repeating-linear-gradient(
+    #fff,
+    #fff 3px,
+    #efefef 0px,
+    #efefef 9px
+  );
+  color: black;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.NU i {
+  font-size: 12px;
+  background-color: #fff;
+  margin-right: -30px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  z-index: -1;
+}
+.card .h5 {
+  font-size: 12px;
+  margin-top: 30px;
+}
